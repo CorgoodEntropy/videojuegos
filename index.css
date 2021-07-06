@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(75, 75, 75);
+}
+a {
+    text-decoration: none;
+}
+
+/* index */
+.container-idx {
+    width: 100%;
+    min-height: 100vh;
+    
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,137,206,1) 61%, rgba(11,11,11,1) 100%);
+    */
+    background-color: #7a7b7b;
+    background-image: linear-gradient(121deg, #7a7b7b 0%, #7caba5 53%);
+
+
+    color: rgb(53, 52, 52);
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    flex-wrap: wrap;
+}
+#top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#language {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#language a {
+    color: white;
+    display: block;
+}
+.button-lang {
+    padding: 1em 2em;
+}
+.button-lang:hover {
+    background: rgba(255, 255, 255, .2);
+    border: rgba(255, 255, 255, .8) solid 1px;
+    border-radius: 3px;
+}
+#title {
+    height: 50vh;
+    border: rgb(53, 52, 52) solid 5px;
+    margin-top: 1em;
+    padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, .25) 10px 20px 20px;
+}
+#title h1 {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    border-bottom: white solid 2.5px;
+}
+#image {
+    width: 30%;
+    min-width: 360px;
+    border: white solid 3px;
+    box-shadow: rgba(0, 0, 0, .5) 10px 20px 20px;
+}
+#image img {
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    #title {
+        width: 100%;
+        /*height: max-content;*/
+        padding: 2rem 1rem;
+    }
+    #left {
+        width: 50%;
+    }
+    #image {
+        width: 40%;
+    }
+    #title h1 {
+        font-size: 2rem;
+    }
+    #title h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:767px) {
+    #left {
+        width: 80%;
+        margin: auto;
+    }
+    #language {
+        flex-direction: row;
+    }
+    #title {
+        width: 100%;
+        height: max-content;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    #image {
+        width: 80%;
+        margin: 2rem auto;
+        min-width: 300px;
+    }
+}
+
+
