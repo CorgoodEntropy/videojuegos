@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(221, 220, 220);  /* lila: 147, 0, 254  -- 	57.6, 0, 99.6*/
+}
+.container {
+    width: 99%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+.juegos a {
+    color: black;
+    font-style: italic;
+    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+}
+
+/*
+.mostrar {
+    display: block;
+}*/
+h4 {
+    color: yellow;
+}
+
+/* index */
+.container-idx {
+    width: 100%;
+    min-height: 100vh;
+    
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,137,206,1) 61%, rgba(11,11,11,1) 100%);
+    */
+    background-color: #7a7b7b;
+    background-image: linear-gradient(121deg, #7a7b7b 0%, #7caba5 53%);
+
+
+    color: rgb(53, 52, 52);
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* MENU */
+#header-fijo {
+    /*position: -webkit-sticky;*/
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+header {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .99);
+    z-index: 50;
+}
+nav {
+    z-index: 10;
+    min-width: 100%;
+}
+#menu {
+    width: 100%;
+    /*display: flex;*/
+    height: max-content;
+    background-color: white;
+    /*padding: .3rem;*/
+    box-shadow: 0 0 15px rgba(0, 0, 0, .99);
+}
+header, footer, #menu-line {
+    display: flex;
+    height: max-content;
+    background-color: rgb(14, 34, 61);
+    color: white;
+    padding: .5em;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.toggle-menu {
+    margin-left: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.linea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+#data {
+    display: flex;
+    justify-content: space-around;
+    z-index: 150;
+}
+.icon {
+    padding: 0 .5rem;
+    z-index: 150;
+    font-size: x-large;
+    color:   rgb(14, 34, 61, .8);
+    /*display: block;*/
+}
+.icon-data {
+    padding: .5rem 1rem .5rem 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    z-index: 150;
+    cursor: pointer;
+    font-size: x-large;
+    color:  rgba(255, 255, 255, .8);
+    display: block;
+}
+
+.icon-data:hover {
+    background: rgba(255, 255, 255, .2);
+    border: rgba(255, 255, 255, .8) solid 1px;
+    border-radius: 3px;
+}
+
+.icon-data a:visited {
+    color: white;
+}
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+#small-menu {
+    display: none;
+    max-width: max-content;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*flex-direction: column;*/
+    list-style: none;
+    background: white;
+}
+nav ul li {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-right: black solid 1px;
+    border-bottom: 0;
+    text-align: center;
+}
+nav ul li:hover{
+    background: teal;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(16, 40, 77);
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding: .3rem;
+    /*padding: 0 2em 0 1em;*/
+}
+nav ul li a:hover{
+    color: white;
+}
+#menu-line {
+    display: none;
+}
+.image {
+    width: 100%;
+    float: left;
+    /*border: white solid 3px;*/
+    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+}
+.image-border {
+    border: rgba(0, 0, 0, .1) solid 1.5px;
+}
+.video {
+    width: 360px;
+    height: 315px;
+    border: white solid 3px;
+    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+    margin: 2rem 0;
+}
+.image1 {
+    margin: 5% 0;
+    width: 30%;
+    /*min-width: 300px;*/
+    height: inherit;
+}
+.image2 {
+    border: black solid 3px;
+    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+}
+
+.imagejuego1 {
+    width: 100%;
+}
+.imagejuego2 {
+    width: 55%;
+    margin: auto;
+}
+.logoItchio{
+    vertical-align: middle; 
+}
+.image3 {
+    width: 25%;
+    min-width: 400px;
+}
+.image4 {
+    width: 25%;
+    min-width: 400px;
+}
+.image5 {
+    width: 25%;
+    min-width: 400px;
+    margin: 0 0 2rem 0;
+}
+.foto{
+    width: 100%;
+    height:auto;
+}
+.fotoPersonal {
+    
+    width: 100%;
+    height: 100%;
+    /*min-width: 100px;*/
+    margin: 0 0 0 0;
+}
+
+.text1 {
+    float: left;
+    width: 50%;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.text2 {
+    float: left;
+    width: 50%;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.text3 {
+    float: left;
+    width: 100%;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text4 {
+    float: left;
+    width: 60%;
+    color: rgb(14, 34, 61);
+    margin-bottom: 2rem;
+}
+.text5 {
+    float: left;
+    width: 100%;
+    color: rgba(255, 255, 255, .7);
+    line-height: 1.5rem;
+    text-align: center;
+}
+.text6 {
+    float: left;
+    width: 55%;
+    color: rgba(255, 255, 255, .7);
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.text7 {
+    float: left;
+    width: 40%;
+    color: rgb(14, 34, 61);
+    line-height: 1.5rem;
+}
+.text7 a{
+    color:blue;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+}
+#col1, #col2 {
+    width: 40%;
+    text-align: justify;
+    font-size: .75rem;
+}
+p {
+    margin-top: 1rem;
+}
+h5, .bolder, .bolder2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: black;
+}
+.bolder2 {
+    color: rgb(14, 34, 61);
+    font-style: italic;
+}
+.text4 ul li {
+    cursor: pointer;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+#publicaciones {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 90%;
+    min-width: 162px;
+    margin: auto;
+}
+#fila1, #fila2, #fila3 {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    /*overflow: auto;*/
+}
+
+
+.colum1 {
+    width: 25%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 1%;
+}
+.colum2 {
+    width: 74%;
+}
+.integrantes {
+    width: 20%;
+    min-width: 150px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 2%;
+    margin-bottom: 1rem;
+    float: left;
+    
+}
+.juegos {
+    width: 50%;
+    float: left;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 1rem;
+}
+.justify {
+    text-align: justify;
+}
+
+#congresos li:hover {
+    /*background: rgba(255, 255, 255, .3);
+    border: rgba(255, 255, 255, .8) solid 1px;*/
+    background: rgba(0, 0, 0, .1);
+    border: rgba(0, 0, 0, .4) solid 1px;
+    border-radius: 3px;
+
+}
+
+
+#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
+    width: 100%;
+    min-height: 98vh;
+    height: max-content;
+    padding: 10rem 3rem 2rem 3rem;
+    transition: all .7s;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#page4, #page7 {
+    /*background: rgb(192, 192, 192) ;*/
+    background: rgb(241, 240, 240) ;
+}
+#page1 {
+    background: black ;
+    background: rgb(105, 26, 161) ;
+    background: rgb(75, 75, 75) ;
+    background: rgb(241, 240, 240) ;
+}
+
+#page5 {
+    background: rgb(75, 75, 75) ;
+}
+#page3 {
+    background:  rgb(16, 40, 77) ;
+}
+#page2 {
+    /*background: rgb(0, 0, 0) ;*/
+    /*este es muy brillante  background: rgb(147, 0, 254) ; */
+    background: rgb(105, 26, 161) ;
+    background: rgb( 196, 196, 196) ;
+
+}
+#page6 {
+    background:  rgb(16, 40, 77) ;
+}
+
+/* window details  */
+#details {
+    position: fixed;
+    z-index: 200;
+    top: 45vh;
+    left: 100vh;
+    width: 30rem;
+    height: max-content;
+    padding: 2rem 2rem 1rem 2rem;
+    border: grey solid 7px;
+    background-color: rgb(16, 40, 77, .85);
+    box-shadow: rgba(0, 0, 0, .8) 20px 20px 20px;
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+}
+#details1 {
+    color: white;
+}
+#details1,  #details2 {
+    text-align: justify;
+}
+#details button {
+    padding: .2rem .5rem;
+    margin-top: 2rem;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border: grey solid 1px;
+    cursor: pointer;
+}
+.close {
+    display: none;
+}
+#equipo {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tarea{
+    color: yellow;
+    font-size:small ;
+}
+
+@media (max-width:1280px) {
+    .container {
+        width: 100%;
+    }
+    .toggle-menu, #menu-line {
+        display: block;
+    }
+    #menu, #data {
+        display: none;
+    }
+    #menu-line {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 1rem;
+    }
+    #icons {
+        display: flex;
+    }
+    .icon-data {
+        margin: 0;
+    }
+    header {
+        border-bottom: 0.5px solid rgba(255,255,255, .3);
+    }
+    
+    nav, nav ul {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: max-content;
+    }
+    nav ul li {
+        border-bottom: black solid 1px;
+        border-right: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #page1, #page2, #page3, #page4, #page5, #page6, #page7 {
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+    #page1 {
+        padding-top: 7rem;
+    }
+    .text1, .text2, .text3, .text4, .text5, .text6, .text7 {
+        width: 100%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    h2 {
+        align-self: center;
+    }
+    #content {
+        flex-direction: column;
+    }
+    #col1, #col2 {
+        width: 100%;
+    }
+    .image3, .image4, .image5 {
+        width: 40%;
+        min-width: 300px;
+    }
+    
+    .video {
+        width: 300px;
+    }
+    .colum1 {
+        font-size: .8rem;
+    }
+    #botones, #menu-line {
+        box-shadow: 0 0 15px rgba(0, 0, 0, .99);
+    }
+    #details {
+        top: 20vh;
+        left: 3vh;
+        width: 25rem;
+    }
+    
+    
+}
+@media (max-width:500px) {
+    #page1 {
+        padding-top: 10rem;
+    }
+    #page6, .text6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .image2, .image5 {
+        margin: 2rem 0;
+    }
+    .juegos {
+        width: 90%;
+    }
+    
+}
