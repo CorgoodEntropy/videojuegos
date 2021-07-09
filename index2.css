@@ -224,6 +224,7 @@ nav ul li a:hover{
 .foto{
     width: 100%;
     height:auto;
+    border-radius: 50%;
 }
 .fotoPersonal {
     
@@ -231,8 +232,15 @@ nav ul li a:hover{
     height: 100%;
     /*min-width: 100px;*/
     margin: 0 0 0 0;
+    border-radius: 50%;
 }
-
+.dosCol{
+    display: flex;
+}
+.dosCol img{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
 .text1 {
     
     float: left;
