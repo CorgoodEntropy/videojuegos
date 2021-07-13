@@ -645,6 +645,10 @@ h5, .bolder, .bolder2 {
         /*padding-left: 0;*/
         padding-right: 0;
     }
+    #page2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
     #page6, .text6 {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -688,7 +692,17 @@ h5, .bolder, .bolder2 {
         margin: auto;
     }
     .botonVerTrailer {
-        margin-left: 5%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 50%;
+    }
+    .botonGooglePlay{
+        width: 50%;
+    }
+    .integrantes {
+        padding-right: 0.5%;
+        margin-bottom: 1rem;
+        float: left;
     }
 
     
