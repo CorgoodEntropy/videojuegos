@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 body {
@@ -14,49 +14,34 @@ body {
 a {
     text-decoration: none;
 }
-.juegos a {
-    color: black;
-    font-style: italic;
-    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
-}
 
-/*
-.mostrar {
-    display: block;
-}*/
-h4 {
-    color: yellow;
-}
-
-/* index */
-.container-idx {
-    width: 100%;
-    min-height: 100vh;
-    
-    /*background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,137,206,1) 61%, rgba(11,11,11,1) 100%);
-    */
-    background-color: #7a7b7b;
-    background-image: linear-gradient(90deg, #1a025c 0%, #a53279 53%);
-
-
-    color: rgb(53, 52, 52);
-    display: flex;
-    justify-content: space-around;   
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* MENU */
+/* MENU  */
 #header-fijo {
-    /*position: -webkit-sticky;*/
     position: fixed;
     top: 0;
     width: 99%;
 }
 header {
-    /*box-shadow: 0 0 15px rgba(0, 0, 0, .99);****/
     z-index: 50;
+}
+
+.tituloSeccion {
+    width: 30rem;
+    margin: auto;
+}
+.tituloSeccion img{
+    width: 100%;
+}
+.tituloJuego {
+    width: 30rem;
+    margin: auto;
+}
+.tituloJuego img{
+    width: 100%;
+}
+.centrado {
+    text-align: center;
+    align-self: center;
 }
 nav {
     z-index: 10;
@@ -66,7 +51,7 @@ nav {
     width: 100%;
     /*display: flex;*/
     height: max-content;
-    background-color: rgb(62, 17, 95);
+    background-color: #2A0445;
     /*padding: .3rem;*/
     box-shadow: 0 15px 15px rgba(0, 0, 0, .3);
     
@@ -75,13 +60,15 @@ header, footer, #menu-line {
     display: flex;
     height: max-content;
     
-    background-color: rgb(62, 17, 95);
+    background-color: #2A0445;
     color: white;
     padding: .5em;
-    /*flex-direction: column;*/
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+header{
+    background-color: black;
 }
 .toggle-menu {
     margin-left: 1rem;
@@ -94,11 +81,13 @@ header, footer, #menu-line {
     justify-content: space-between;
     padding: 0 .5rem;
 }
-
-#data {
-    display: flex;
-    justify-content: space-around;
-    z-index: 150;
+.tituloContacto {
+    width: 20rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+.tituloContacto img{
+    width: 100%;
 }
 .icon {
     padding: 0 .5rem;
@@ -108,12 +97,12 @@ header, footer, #menu-line {
     /*display: block;*/
 }
 .icon-data {
-    padding: .5rem 1rem .5rem 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    /*padding: .5rem 1rem;*/
+    /*padding-top: .5rem;
+    padding-bottom: .5rem;*/
     z-index: 150;
     cursor: pointer;
-    font-size: x-large;
+    font-size: 2rem;
     color:  rgba(255, 255, 255, .8);
     display: block;
 }
@@ -142,7 +131,7 @@ nav ul {
     align-items: center;
     /*flex-direction: column;*/
     list-style: none;
-    background-color: rgb(62, 17, 95);
+    background-color: #2A0445;
 }
 nav ul li {
     width: 100%;
@@ -160,7 +149,7 @@ nav ul li a{
     text-decoration: none;
     display: block;
     color: white;
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 1.5rem;
     padding: .3rem;
     /*padding: 0 2em 0 1em;*/
@@ -179,6 +168,38 @@ nav ul li a:hover{
 }
 .image-border {
     border: rgba(0, 0, 0, .1) solid 1.5px;
+}
+.cuerpoJuego{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.botonesJuegos {
+    width: 100%;
+    text-align: center;
+}
+.botonItchio {
+    float: left;
+}
+.botonGooglePlay{
+    float: left;
+    width: 12rem;
+}
+.botonGooglePlay img {
+    width: 100%;
+}
+.botonVerTrailer {
+    /*
+    color: white;
+    background-color: #ab08a8;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 15%;*/
+    width: 13rem;
+    margin-left: 10%;
+    float: left;
+}
+.botonVerTrailer a img{
+    width: 100%;
 }
 .video {
     width: 360px;
@@ -207,6 +228,7 @@ nav ul li a:hover{
 }
 .logoItchio{
     vertical-align: middle; 
+    width: 9rem;
 }
 .image3 {
     width: 25%;
@@ -224,21 +246,19 @@ nav ul li a:hover{
 .foto{
     width: 100%;
     height:auto;
-    border-radius: 50%;
 }
 .fotoPersonal {
-    
-    width: 100%;
+    width: 80%;
     height: 100%;
     /*min-width: 100px;*/
     margin: 0 0 0 0;
-    border-radius: 50%;
 }
 .dosCol{
     display: flex;
+    width: 20%;
 }
 .dosCol img{
-    width: 2.5rem;
+    width: 100%;
     margin-right: 1rem;
 }
 .text1 {
@@ -276,8 +296,8 @@ nav ul li a:hover{
     float: left;
     width: 100%;
     /*color: rgba(255, 255, 255, .7);*/
-    color: black;
-    line-height: 1.5rem;
+    color: white;
+    line-height: 1.4rem;
     text-align: center;
 }
 .text6 {
@@ -287,20 +307,24 @@ nav ul li a:hover{
     line-height: 1.5rem;
     text-align: justify;
 }
-.text7 {
-    float: left;
-    width: 40%;
-    color: rgb(14, 34, 61);
-    line-height: 1.5rem;
-}
-.text7 a{
-    color:blue;
-}
 
 #content {
     display: flex;
     justify-content: space-around;
 }
+
+.divsuperior {
+    width: 100%;
+    height: 35vh;
+    background: #fffafa;
+}
+.divinferior {
+    width: 100%;
+    height: 50vh;
+    background: #AB08A8;
+    color: white;
+}
+
 #col1, #col2 {
     width: 40%;
     text-align: justify;
@@ -312,7 +336,7 @@ p {
 h5, .bolder, .bolder2 {
     font-size: 1rem;
     font-weight: bold;
-    color: white;
+    color: black;
     text-shadow: black;
 }
 .bolder2 {
@@ -332,22 +356,55 @@ h5, .bolder, .bolder2 {
     min-width: 162px;
     margin: auto;
 }
-#fila1, #fila2, #fila3 {
+.fila1, .fila2, .fila3 {
     display: flex;
     width: 100%;
-    margin-top: 2rem;
-    /*overflow: auto;*/
+    /*margin-top: 2rem;*/
 }
-
-
+.fila1, .fila3{
+    text-align: center;
+}
+.fila2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .colum1 {
+    float: left;
+    /*display: flex;*/
     width: 25%;
     font-size: 1rem;
     font-weight: bold;
-    padding-right: 1%;
+    padding: 3% 5% 1%;
+    
+}
+.colum1 img {
+    width: 100%;
 }
 .colum2 {
-    width: 74%;
+    float: left;
+    display: flex;
+    width: 45%;
+    border-left: white solid 7px;
+    padding: 3% 4rem;
+    vertical-align: middle;
+}
+.colum2 a{
+    color: white;
+}
+.colum3 {
+    float: left;
+    display: flex;
+    width: 30%;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
 }
 .integrantes {
     width: 20%;
@@ -370,8 +427,11 @@ h5, .bolder, .bolder2 {
 }
 .justify {
     text-align: justify;
+    margin-right: 2rem;
 }
-
+.justify2 {
+    line-height: 1.5rem;
+}
 #congresos li:hover {
     /*background: rgba(255, 255, 255, .3);
     border: rgba(255, 255, 255, .8) solid 1px;*/
@@ -407,32 +467,22 @@ h5, .bolder, .bolder2 {
     background: rgb(105, 26, 161) ;
 }
 #page1 {
-    background: black ;
-    background: rgb(105, 26, 161) ;
-    background: rgb(75, 75, 75) ;
-    background: rgb(241, 240, 240) ;
-    background-image: linear-gradient(0deg, #691AA1 , #AB08A8, #691AA1 70%);
-}
-
-#page5 {
-    background: rgb(75, 75, 75) ;
-    background: rgb(241, 240, 240) ;
-}
-#page3 {
-    background:  rgb(16, 40, 77) ;
-    background: rgb(241, 240, 240) ;
-
+    /*background-image: linear-gradient(0deg, #691AA1 , #AB08A8, #691AA1 70%);*/
+    background-image: linear-gradient(0deg, #9300FE 0%, #54078c 70%);
 }
 #page2 {
-    /*background: rgb(0, 0, 0) ;*/
-    /*este es muy brillante  background: rgb(147, 0, 254) ; */
-    background: rgb(105, 26, 161) ;
-    background: rgb( 196, 196, 196) ;
-
+    background-image: linear-gradient(0deg, #AB08A8 0%,  #9300FE 50%);
+}
+#page3 {
+    background-image: linear-gradient(0deg, #fffafa 0%,  #AB08A8 83%);
+}
+#page5 {
+    background: #fffafa ;
+    padding: 0;
 }
 #page6, #page7{
-    background:  rgb(105, 26, 161) ;
-    color: rgb( 196, 196, 196);
+    background-color: #fffafa ;
+    color: black;
 }
 
 /* window details  */
@@ -477,9 +527,33 @@ h5, .bolder, .bolder2 {
     flex-wrap: wrap;
 }
 .tarea{
-    color: yellow;
+    color: #AEB9C0;
     font-size:small ;
 }
+.bodyjuegos {
+    width: 100%;
+    background: #E7d7f3;
+    padding: 2rem 0 1rem 0;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 20px 2px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text1, .text2, .text3, .text4, .text5, .text6, .text7 {
+    width: 100%;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.text7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 @media (max-width:1280px) {
     .container {
@@ -504,6 +578,7 @@ h5, .bolder, .bolder2 {
         margin: 0;
     }
     header {
+        background-color: black;
         border-bottom: 0.5px solid rgba(255,255,255, .3);
     }
     
@@ -530,13 +605,10 @@ h5, .bolder, .bolder2 {
     #page1 {
         padding-top: 7rem;
     }
-    .text1, .text2, .text3, .text4, .text5, .text6, .text7 {
-        width: 100%;
-        min-width: 100%;
-        align-items: center;
-        justify-content: center;
+    #page7 {
+        padding: 0;
     }
-    
+
     h2 {
         align-self: center;
     }
@@ -554,9 +626,6 @@ h5, .bolder, .bolder2 {
     .video {
         width: 300px;
     }
-    .colum1 {
-        font-size: .8rem;
-    }
     #botones, #menu-line {
         box-shadow: 0 0 15px rgba(0, 0, 0, .99);
     }
@@ -568,19 +637,59 @@ h5, .bolder, .bolder2 {
     
     
 }
-@media (max-width:500px) {
+@media (max-width:700px) {
     #page1 {
         padding-top: 10rem;
+    }
+    #page3 {
+        /*padding-left: 0;*/
+        padding-right: 0;
     }
     #page6, .text6 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .dosCol{
+        width: 80%;
+        margin: auto;
+    }
     .image2, .image5 {
         margin: 2rem 0;
     }
-    .juegos {
+    .juegos, .cuerpoJuego, .colum2, .colum3{
         width: 90%;
+        margin: auto;
     }
+    .juegos {
+        padding: 0;
+    }
+    .divinferior {
+        height: max-content;
+    }
+    .colum1 {
+        width: 60%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .colum2, .colum3{
+        margin-top: 1rem;
+        border: 0;
+    }
+    .divsuperior{
+        height: 1rem;
+    }
+    .tituloSeccion {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+    .tituloJuego {
+        width: 80%;
+        margin: auto;
+    }
+    .botonVerTrailer {
+        margin-left: 5%;
+    }
+
     
 }
