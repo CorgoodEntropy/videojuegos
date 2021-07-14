@@ -316,7 +316,6 @@ nav ul li a:hover{
 .divsuperior {
     width: 100%;
     height: 35vh;
-    background: #fffafa;
 }
 .divinferior {
     width: 100%;
@@ -468,20 +467,24 @@ h5, .bolder, .bolder2 {
 }
 #page1 {
     /*background-image: linear-gradient(0deg, #691AA1 , #AB08A8, #691AA1 70%);*/
-    background-image: linear-gradient(0deg, #9300FE 0%, #54078c 70%);
+    background-image: linear-gradient(0deg, #4A0B78 0%, #2A0445 70%);
 }
 #page2 {
-    background-image: linear-gradient(0deg, #AB08A8 0%,  #9300FE 50%);
+    background-image: linear-gradient(0deg,#6F13B1 0%, #4A0B78 50%);
 }
 #page3 {
-    background-image: linear-gradient(0deg, #fffafa 0%,  #AB08A8 83%);
+    background-image: linear-gradient(0deg, #B090C8 0%,  #6F13B1 83%);
 }
 #page5 {
-    background: #fffafa ;
+    background: #BFB8C3 ;
     padding: 0;
 }
-#page6, #page7{
-    background-color: #fffafa ;
+#page6 {
+    background:  #B090C8 ; 
+    color: black;
+}
+#page7{
+    background-image: linear-gradient(0deg, #BFB8C3 0%,  #B090C8 83%);
     color: black;
 }
 
