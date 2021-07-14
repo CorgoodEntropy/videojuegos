@@ -475,6 +475,7 @@ h5 {
 }
 .seccionlogo {
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -576,6 +577,16 @@ h5 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .justificado {
+        width: 90%;
+        margin: auto;
+    }
+    .image1 {
+        width: 40%;
+        margin: auto;
+
+    }
+    
     .dosCol{
         width: 80%;
         margin: auto;
