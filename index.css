@@ -40,7 +40,7 @@ a {
     width: 20%;
     height: 40vh;
     min-width: 230px;
-    background: url("img/logoCorgood.png") no-repeat;
+    background: url("img/logoFoco.png") no-repeat; /*background: url("img/logoCorgood.png") no-repeat;*/
     display: inline-block;
     background-size: contain;
 }

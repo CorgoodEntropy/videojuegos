@@ -299,36 +299,27 @@ h5 {
 }
 .colum1 {
     float: left;
-    width: 25%;
-    margin: auto;
-    padding: 3% 3% 1%;
+    width: 50%;
 }
 .colum1 img {
     width: 100%;
 }
+.logoFooter {
+    width: 30%;
+    margin: auto;
+}
 .colum2 {
     float: left;
     display: flex;
-    width: 25%;
+    width: 50%;
     min-width: max-content;
     border-left: white solid 7px;
-    padding: 3% 4rem;
+    padding: 0 2rem;
     vertical-align: middle;
+    margin-top: 1rem;
 }
 .colum2 a{
     color: white;
-}
-.colum3 {
-    float: left;
-    display: flex;
-    width: 20%;
-    min-width: max-content;
-    padding-top: 3%;
-    padding-right: 5%;
-    padding-left: 5%;
-    display: flex;
-    justify-content: space-around;
-    vertical-align: middle;
 }
 .integrantes {
     width: 20%;
@@ -485,6 +476,8 @@ h5 {
 .seccionlogo p {
     width: 60%;
     font-size: 1.3rem;
+    padding-bottom: 1rem;
+
 }
 form {
     width: max-content;
@@ -521,9 +514,15 @@ textarea {
     border-radius: 5px;
 }
 .redes {
-    width: max-content;
-    margin-top: 3rem;
+    width: 50%;
+    max-width: max-content;
+    margin: 2rem auto;
 }
+.formulario {
+    width: 100%;
+    height: 60vh;
+}
+
 
 @media (max-width:1280px) {
     .container {
@@ -588,10 +587,7 @@ textarea {
     #col1, #col2 {
         width: 100%;
     }
-    .image3, .image4, .image5 {
-        width: 40%;
-        min-width: 300px;
-    }
+    
     
     .video {
         width: 300px;
@@ -630,6 +626,7 @@ textarea {
     .image1 {
         width: 40%;
         margin: auto;
+        margin-bottom: 1rem;
 
     }
     
@@ -637,10 +634,10 @@ textarea {
         width: 80%;
         margin: auto;
     }
-    .image2, .image5 {
+    .image2 {
         margin: 2rem 0;
     }
-    .juegos, .cuerpoJuego, .colum2, .colum3{
+    .juegos, .cuerpoJuego, .colum2{
         width: 90%;
         margin: auto;
     }
@@ -651,11 +648,14 @@ textarea {
         height: max-content;
     }
     .colum1 {
-        width: 60%;
+        width: 90%;
         margin: auto;
         margin-top: 2rem;
     }
-    .colum2, .colum3{
+    .colum2{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
         margin-top: 1rem;
         border: 0;
     }
@@ -687,6 +687,7 @@ textarea {
     .seccionlogo p {
         width: 80%;
         font-size: 1.3rem;
+        padding-bottom: 1rem;
     }
     
     
