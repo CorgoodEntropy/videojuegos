@@ -292,7 +292,7 @@ h5 {
 .fila2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     align-items: center;
     flex-wrap: wrap;
@@ -313,8 +313,8 @@ h5 {
     display: flex;
     width: 50%;
     min-width: max-content;
-    border-left: white solid 7px;
-    padding: 0 2rem;
+    /*border-left: white solid 7px;*/
+    padding: 0;
     vertical-align: middle;
     margin-top: 1rem;
 }
@@ -519,7 +519,7 @@ textarea {
     margin: 2rem auto;
 }
 .formulario {
-    width: 100%;
+    width: 80%;
     height: 60vh;
 }
 
@@ -637,7 +637,7 @@ textarea {
     .image2 {
         margin: 2rem 0;
     }
-    .juegos, .cuerpoJuego, .colum2{
+    .juegos, .cuerpoJuego{
         width: 90%;
         margin: auto;
     }
@@ -689,6 +689,14 @@ textarea {
         font-size: 1.3rem;
         padding-bottom: 1rem;
     }
+    .formulario {
+        width: 100%;
+        height: 100vh;
+    }
     
+    .redes {
+        min-width: max-content;
+        margin: 2rem auto;
+    }
     
 }
