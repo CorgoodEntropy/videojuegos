@@ -27,11 +27,19 @@ header {
 }
 
 .tituloSeccion {
-    width: 30rem;
+    width: max-content;
     margin: auto;
+    background: #AB08A8;
 }
 .tituloSeccion img{
     width: 100%;
+}
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: white;
+    padding: 0.5em;
 }
 .tituloJuego {
     width: 30rem;
@@ -83,12 +91,12 @@ header{
     padding: 0 .5rem;
 }
 .tituloContacto {
-    width: 20rem;
+    width: max-content;
     margin: auto;
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
 }
-.tituloContacto img{
-    width: 100%;
+.tituloContacto h2{
+    padding: 0;
 }
 /*
 .icon {
@@ -697,6 +705,11 @@ textarea {
     .redes {
         min-width: max-content;
         margin: 2rem auto;
+    }
+    h2 {
+        font-size: 3rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     
 }
