@@ -242,6 +242,11 @@ nav ul li a:hover{
     /*min-width: 100px;*/
     margin: 0 0 1rem 0;
     border-radius: 50%;
+    transition: 1s;
+}
+.fotoPersonal:hover {
+    width: 90%;
+    margin : 0;
 }
 .dosCol{
     display: flex;
@@ -338,6 +343,7 @@ h5 {
     margin-bottom: 2rem;
     float: left;
 }
+
 .juegos {
     width: 50%;
     float: left;
@@ -346,6 +352,12 @@ h5 {
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 1rem;
+}
+.juegos a img{
+    transition: 1s;
+}
+.juegos a img:hover{
+    width: 110%;
 }
 .justify {
     text-align: justify;
