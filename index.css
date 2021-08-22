@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Ropa+Sans&family=Staatliches&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +19,7 @@ article {
 .fila {
     width: 100%;
     height: 80vh;
+    min-height: max-content;
     text-align:center;
     align-items:flex-end;
     display: flex;
@@ -51,6 +54,31 @@ article {
     display: inline-block;
     background-size: contain;
     margin-left: 1rem;
+}
+.texto2 {
+    width: 70%;
+    height: 20vh;
+    min-width: 400px;
+    max-width: max-content;
+    
+    /* background: url("img/logoTexto.png") no-repeat; */
+    /* display: inline-block;
+    background-size: contain; */
+    margin-left: 1rem; 
+}
+
+h2 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
+    line-height:4.5rem;
+}
+.texto-logo2 {
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(177, 174, 174);
+    line-height: 2.5rem;
 }
 .botonE {
     width: 10rem;
@@ -89,8 +117,15 @@ article {
         margin: auto;
         margin-bottom: 2rem;
     }
-    .texto{
+    .texto2{
         width: 100%;
+        height: max-content;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .texto-logo2 {
+        font-size: 2.5rem;
     }
 }
 

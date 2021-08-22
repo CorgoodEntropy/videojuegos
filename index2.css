@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ropa+Sans&family=Staatliches&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Ropa+Sans&family=Staatliches&display=swap');
 * {
     padding: 0;
@@ -592,7 +591,9 @@ h1 {
         background-color: black; /*AB08A8*/
         border-bottom: 0.5px solid rgba(255,255,255, .3);
     }
-    
+    .dosCol{
+        width: 10%;
+    }
     nav, nav ul {
         display: block;
     }
@@ -633,15 +634,38 @@ h1 {
         margin: 0;
     }
     
-    
+    .logoFooter {
+        width: 30%;
+        min-width: max-content;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
     .video {
         width: 300px;
     }
     #botones, #menu-line {
         box-shadow: 0 0 15px rgba(0, 0, 0, .99);
     }
-        
-    
+}
+
+@media (max-width:1000px) {
+    .colum1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .colum2{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 1rem;
+        border: 0;
+    }
+    .formulario {
+        width: 100%;
+        height: 100vh;
+    }
 }
 @media (max-width:700px) {
     #page1 {
@@ -667,12 +691,13 @@ h1 {
         width: 40%;
         margin: auto;
         margin-bottom: 1rem;
-
     }
-    
-    .dosCol{
+    .logo{
         width: 80%;
         margin: auto;
+    }
+    #logo {
+        justify-content: center;
     }
     .image2 {
         margin: 2rem 0;
@@ -733,7 +758,6 @@ h1 {
         width: 100%;
         height: 100vh;
     }
-    
     .redes {
         min-width: max-content;
         margin: 2rem auto;
