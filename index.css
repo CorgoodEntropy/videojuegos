@@ -30,7 +30,7 @@ article {
     text-align: center;
 }
 
-#left {
+.left {
     width: 60%;
     margin: auto;
     display: flex;
@@ -128,9 +128,9 @@ h2 {
 
 
 @media (max-width:767px) {
-    #left {
+    .left {
         /* width: 80%; */
-        margin: auto;
+        /* margin: auto; */
         flex-wrap: wrap;
     }
     .logo{
