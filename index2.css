@@ -557,6 +557,8 @@ h1 {
     font-size: 2.2rem;
     line-height: 2.2rem;
     display: block;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .texto-logo2 {
     font-family: 'Ropa Sans', sans-serif;
@@ -564,6 +566,7 @@ h1 {
     font-weight:bold;
     color: gray;
     margin-left: 1rem;
+    line-height: 1rem;
 }
 .texto-logo3 {
     margin-top: 0.4rem;
