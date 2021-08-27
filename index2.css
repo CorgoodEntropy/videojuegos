@@ -371,6 +371,14 @@ h5 {
     margin-bottom: 2rem;
     float: left;
 }
+.integrantes a {
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: 0.7rem ;
+    background-color: rgba(255, 255, 255,0.5) ;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+}
 
 .juegos {
     width: 50%;
